@@ -1,0 +1,80 @@
+<div class="menu">
+
+    <h1>Welcome to Booking Page</h1>
+    <div class="row">
+        <div class="seatcolumn">
+            <div class="seattop-content">
+                <label>From:</label>
+                <input type="text" #from>
+                <label>To:</label>
+                <input type="text" #to>
+                <input type="submit" value="Search" (click)="valuepass(from.value,to.value)">
+            </div>
+
+            <div class="seatcontent">
+                <table class="seattable">
+                    <tr>
+                        <th>Source:{{fromsource |uppercase}}</th>
+                        <th>Destinations:{{todesitnations | uppercase}}</th>
+                        <th>Seat Available:{{seatavailable}}</th>
+                        <th>Seat Booked:{{bookedseat}}</th>
+                    </tr>
+                </table>
+                <div class="seatposition">
+                    <div class="lowerbirth">
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <!-- <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <br>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button> -->
+                    </div>
+                    <hr>
+                    <div class="upperBirth">
+                       <!--   <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
+                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>  -->
+
+                    </div>
+                    <input type="submit" value="BookTicket" (click)="confirmtkt()">
+                </div>
+            </div>
+
+        </div>
+        <div class="registercolumn" [style.visibility]="visible">
+            <label>Name:</label>
+            <input type="text"><br>
+            <label>Age:</label>
+            <input type="text"><br>
+            <label>Phone No:</label>
+            <input type="text"><br>
+            <label>Journey of Date:</label>
+            <input type="date"><br>
+            <label>Payment</label>
+            <input type="text" value="{{Payment | currency:'INR'}}" readonly>
+            <br>
+
+            
+        </div>
+    </div>
+
+</div>

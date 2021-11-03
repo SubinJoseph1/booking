@@ -1,0 +1,24 @@
+.menu{
+    background: black;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu .footlinks{
+    display: inline-flex;
+}
+
+.menu .footlinks li{
+    padding-left: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu .footlinks li a {
+    color: white;
+    text-decoration: none;
+}
+.menu .footlinks li a:hover{
+    border-bottom: 1px solid white;
+}

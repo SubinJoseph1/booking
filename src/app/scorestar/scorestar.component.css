@@ -1,0 +1,46 @@
+.menu{
+    padding: 0 20px 0 20px;
+    margin: 0 0 100px 0;
+    border-bottom: 4px solid gray;
+}
+
+.row{
+    display: flex;
+    
+}
+
+.col1{
+    width: 50%;
+
+}
+.col2{
+    width: 30%;
+}
+
+.star{
+    display: flex;
+}
+
+.col2 .col2img{
+    display: flex;
+}
+
+.col2img .img1{
+    position: relative;
+    z-index: 1;
+}
+
+.col2img .img2{
+    position: absolute;
+    
+    right: 100px;
+}
+
+.col2img .img3{
+    position: absolute;
+    right: 40px;
+}
+
+.clr{
+    clear: both;
+}

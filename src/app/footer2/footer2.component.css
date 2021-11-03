@@ -1,0 +1,80 @@
+.menu{
+    margin: 0 0 0 0;
+    border-color: gray;
+}
+.row{
+    display: flex;
+    background-image: linear-gradient(to left,black,gray);
+    padding-top: 40px;
+}
+.col1{
+    margin-left: 20px;
+}
+.col1 .practicelist{
+    padding: 0 0 0 0;
+}
+.col1 .practicelist li{
+    list-style: none;
+    line-height: 20px;
+}
+.col1 header{
+    color: white;
+}
+.col1 .practicelist li a{
+    color: white;
+    text-decoration: none;
+}
+.col1 .practicelist li a:hover{
+    border-bottom: 1px solid white;
+}
+.col2{
+    margin-left: 200px;
+}
+
+.col2 .aboutlist{
+    padding: 0 0 0 0;
+}
+
+.col2 .aboutlist li{
+    list-style: none;
+    line-height: 20px;
+}
+.col2 header{
+    color: white;
+}
+.col2 .aboutlist li a{
+    color: white;
+    text-decoration: none;
+}
+.col2 .aboutlist li a:hover{
+    border-bottom: 1px solid white;
+}
+.col3{
+    margin-left: 150px;
+}
+
+.col3 header{
+    color: white;
+    margin-left: 100px;
+}
+
+.col3 .col1ro11{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.col3 .col1ro11 span{
+    color: white;
+}
+
+.col3 h3{
+    color: white;
+    margin-left: 100px;
+}
+
+.col3 .logo{
+ display: flex;
+ align-items: center;
+ margin-left: 100px;
+}

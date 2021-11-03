@@ -1,0 +1,55 @@
+.menu{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.seatcolumn{
+    width: 50%;
+}
+.seatcolumn label{
+    margin-left: 20px;
+}
+.seatcolumn input{
+    margin-left: 5px;
+}
+
+.seatcontent .seattable{
+    margin-top: 30px;
+}
+table,tr,th{
+    border: 1px solid black;
+    margin-left: 30px;
+}
+
+.seatcontent .seatposition{
+    border:1px solid;
+    width: 80%;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.seatposition .lowerbirth button{
+    border: 1px solid #a5a5a5;
+    width: 34px;
+    height: 17px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.seatposition .upperBirth button{
+    border: 1px solid #a5a5a5;
+    width: 34px;
+    height: 17px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.registercolumn{
+    width: 49%;
+    border: 1px solid;
+    visibility: hidden;
+}

@@ -1,0 +1,99 @@
+.menu{
+    padding: 0 20px 0 20px;
+    margin-top: 50px;
+}
+
+.row{
+    display: flex;
+    margin-top: 30px;
+}
+.col1{
+    background-image: url(../../assets/Images/fea_image.png);
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+
+   
+}
+
+.col1 h2{
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 200px 0 0 36px;
+    text-align: left;
+    color: #fff;
+}
+.col1 a{
+    
+    color: #00aaad !important;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin: 10px 0 0 36px;
+
+}
+.col1 img{
+    position: absolute;
+    margin-left: 10px;
+}
+.col2{
+    background-image: url(../../assets/Images/fea_image.png);
+    width: 30%;
+    height: 300px;
+    margin-left: 35px;
+    background-size: cover;
+}
+.col2 h2{
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 200px 0 0 36px;
+    text-align: left;
+    color: #fff;
+}
+.col2 a{
+    
+    color: #00aaad !important;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin: 10px 0 0 36px;
+
+}
+.col2 img{
+    position: absolute;
+    margin-left: 10px;
+}
+.col3{
+    background-image: url(../../assets/Images/fea_image.png);
+    width: 30%;
+    height: 300px;
+    margin-left: 35px;
+    background-size: cover;
+}
+.col3 h2{
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 200px 0 0 36px;
+    text-align: left;
+    color: #fff;
+}
+.col3 a{
+    
+    color: #00aaad !important;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin: 10px 0 0 36px;
+
+}
+.col3 img{
+    position: absolute;
+    margin-left: 10px;
+}
+
+.clr{
+    clear: both;
+}
