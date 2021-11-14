@@ -1,0 +1,52 @@
+<div class="main_container">
+    <div class="header">
+        <img src="../../assets/images bookt/HEADER_01.gif">
+        <img src="../../assets/images bookt/HEADER_03.gif">
+        <img src="../../assets/images bookt/HEADER_05.gif">
+    </div>
+    <hr>
+    <div class="leftcontainer">
+        <div class="seatlayout">
+            <h5>Seat Layout</h5>
+            <button *ngFor="let seatno of seatarr" [ngClass]="{'green' : toggle[seatno], 'red': !toggle[seatno],'busbboked':seatbooked[seatno]}" (click)="selectSeat(seatno)">{{seatno}}</button>
+        
+        </div>
+        <input type="submit" value="BookTicket" (click)="confirmtkt()">
+
+        <p>Seat Booked:{{seatbookedno}}</p>
+        <p>Seat Availble:{{seatavilable}}</p>
+       
+    </div>
+    <div class="rightcintainer" [style.visibility]="visible">
+        <div class="seatdeatls">
+             <!-- <div class="details">
+                <h4>{{jstart}}</h4> <h4> to </h4> <h4>{{jend}}</h4><h4>Travel-Date</h4><h4>{{jdate}}</h4>
+            </div>  -->
+            <form>
+                <h3>Passesnger Details</h3>
+                <h4>Pickup Point :{{jstart}}</h4>
+                <h4>Drop Point :{{jend}}</h4>
+                <label>Passesnger Name:</label>
+            <input type="text" id="i1" #passname>
+            <br>
+            <label>Passesnger Age:</label>
+            <input type="text"  id="i2" #passage>
+            <br>
+            <label>Mobile:</label>
+            <input type="text" maxlength="10"  id="i3" #passno>
+            <br>
+            <label>Select seat No:</label>
+            <input type=" text"   id="i4" value="{{ss}}" #passseatno readonly>
+            <br>
+            <label>payment:</label>
+            <input type="text" readonly  id="i5" #passmoney value="{{payment}}" >
+            <br>
+            <input type="button" value="Confirm Ticket" (click)=passDetails(passname.value,passage.value,passno.value,passseatno.value,passmoney.value)>
+            </form>
+            <!-- <button (click)="block()">submit1</button> -->
+            
+           
+            
+        </div>
+    </div>
+</div>

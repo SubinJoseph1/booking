@@ -1,0 +1,102 @@
+.main_container{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 580px;
+}
+.header{
+    margin-left: 22px;
+    margin-top: 4px;
+    
+}
+.leftcontainer{
+    width: 40%;
+    float: left;
+}
+
+.leftcontainer .seatlayout{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 300px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.seatlayout h5{
+    text-align: center;
+    margin: 0;
+    background: brown;
+    color: white;
+    font-size: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+input[type="submit"] {
+    margin-left: 50px;
+    margin-top: 4px;
+    padding: 5px;
+}
+.leftcontainer .seatlayout button{
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+
+.seatdeatls .details{
+    display: flex;
+}
+.details h4{
+    padding-left: 20px;
+}
+
+.rightcintainer{
+    width: 60%;
+    float: right;
+}
+
+.rightcintainer input[type="button"] {
+    margin-left: 100px;
+    padding: 10px
+}
+.green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+
+  .busbboked{
+      background-color: gray;
+  }
+
+  .seatdeatls form{
+      border:1px solid;
+      border-radius: 10px;
+      width: 65%;
+      padding-bottom: 20px;
+  }
+.seatdeatls form input{
+    margin-top: 10px;
+}
+  #i1{
+      margin-left: 10px;
+
+  }
+  #i2{
+      margin-left: 23px;
+  }
+
+  #i3{
+      margin-left: 77px;
+  }
+
+#i4{
+    margin-left: 32px;
+}
+#i5{
+    margin-left: 68px;
+}

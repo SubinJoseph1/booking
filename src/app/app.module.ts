@@ -17,6 +17,9 @@ import { Footer3Component } from './footer3/footer3.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { BookticketComponent } from './bookticket/bookticket.component';
+import { NewbookticketComponent } from './newbookticket/newbookticket.component';
+import { SeatbookpageComponent } from './seatbookpage/seatbookpage.component';
+import { ShowdetailsComponent } from './showdetails/showdetails.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { BookticketComponent } from './bookticket/bookticket.component';
     Footer3Component,
     ErrorComponent,
     HomeComponent,
-    BookticketComponent
+    BookticketComponent,
+    NewbookticketComponent,
+    SeatbookpageComponent,
+    ShowdetailsComponent
   ],
   imports: [
     BrowserModule,

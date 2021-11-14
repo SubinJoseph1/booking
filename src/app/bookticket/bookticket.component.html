@@ -8,7 +8,9 @@
                 <input type="text" #from>
                 <label>To:</label>
                 <input type="text" #to>
-                <input type="submit" value="Search" (click)="valuepass(from.value,to.value)">
+                <label>Date:</label>
+                <input type="date" #date>
+                <input type="submit" value="Search" (click)="valuepass(from.value,to.value,date.value)">
             </div>
 
             <div class="seatcontent">
@@ -22,37 +24,12 @@
                 </table>
                 <div class="seatposition">
                     <div class="lowerbirth">
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <!-- <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <br>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button> -->
+                        <button type="button" [style.background]="bg[seatarray]" [style.background]="bg1[seatarray]" *ngFor="let seatarray of seat" (click)="seatbookclr(seatarray)">{{seatarray}}</button>
+                        
                     </div>
                     <hr>
                     <div class="upperBirth">
-                       <!--   <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>
-                        <button type="button" [style.background]="clr" (click)="seatbookclr()"></button>  -->
+                       
 
                     </div>
                     <input type="submit" value="BookTicket" (click)="confirmtkt()">
@@ -62,16 +39,19 @@
         </div>
         <div class="registercolumn" [style.visibility]="visible">
             <label>Name:</label>
-            <input type="text"><br>
+            <input type="text" #passname value=""><br>
             <label>Age:</label>
-            <input type="text"><br>
+            <input type="text" #passage value=""><br>
             <label>Phone No:</label>
-            <input type="text"><br>
+            <input type="text" #passno value=""><br>
             <label>Journey of Date:</label>
-            <input type="date"><br>
+            <input type="text" #passdate value="{{journeyDate}}" readonly><br>
+            <label>Select Seat No:</label>
+            <input type="text" value="{{Selectedseat}}" #passseatno readonly><br>
             <label>Payment</label>
-            <input type="text" value="{{Payment | currency:'INR'}}" readonly>
+            <input type="text" value="{{Payment | currency:'INR'}}" readonly #passmoney>
             <br>
+            <input type="reset" value="Submit" (click)=passDetails(passname.value,passage.value,passno.value,passdate.value,passseatno.value,passmoney.value)>
 
             
         </div>

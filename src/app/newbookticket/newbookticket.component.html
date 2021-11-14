@@ -1,0 +1,51 @@
+<div class="main_container">
+    <div class="headerimg">
+        <img src="../../assets/images bookt/tnstc_logotopbaner_01_02 (1).jpg">
+        <img src="../../assets/images bookt/tnstc_logotopbaner_04.jpg">
+    </div>
+   
+    <hr>
+    <div class="leftcontainer">
+        <div class="searchbookt">
+            <h1>
+                Search & Book Tickets
+            </h1>
+            <label>
+                From:
+            </label>
+            <select #source id="i1">
+                <option value="" disabled selected hidden>Select your Source</option>
+                <option #src>Chennai</option>
+                <option>Bangalore</option>
+                <option>Madurai</option>
+                <option>Nagercoil</option>
+                <option>Kollam</option>
+            </select>
+            <br>
+            <label>To:</label>
+            <select #Destinations id="i2">
+                <option value="" disabled selected hidden>Select your Destinations</option>
+                <option>Kollam</option>
+                <option>Nagercoil</option>
+                <option>Madurai</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+            </select>
+           
+            <hr>
+            <label>Journey Date:</label>
+            <input type="date" value="{{myDate }}" #jdate>
+            <hr>
+            <button value=""   (click)="busDetails(source.value,Destinations.value,jdate.value)">Search Bus Service</button>
+        </div>
+    </div>
+    <div class="rightContainer">
+        <h4>Welcome to State Express Transport Corporation</h4>
+        <br>
+        <img src="../../assets/images bookt/CM.gif">
+
+    </div>
+</div>
+   
+   
+    
